@@ -130,8 +130,8 @@ function Find-SensitiveData {
 		PrivateKey		= '\s*(\bBEGIN\b).*(PRIVATE KEY\b)\s*'
 		AWSSecret		= '[A-F0-9]{16}:[a-zA-Z0-9+/]{48}'
 		DB				= '\bConnectionString\b'
-		ClientSecret	= '\ClientSecret\'
-		SecureString = 'SecureString|new\s+SecureString\s*\(\s*"[^"]*"\s*\)'
+		ClientSecret	= '\bClientSecretb\'
+		SecureString = '\bSecureString|new\s+SecureString\s*\(\s*"[^"]*"\s*\)\b'
 	}
 	
 	# If $BaseDirectory doesn't exist, then try to create it
