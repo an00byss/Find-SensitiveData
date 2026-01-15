@@ -130,7 +130,7 @@ function Find-SensitiveData {
 		PrivateKey		= '\s*(\bBEGIN\b).*(PRIVATE KEY\b)\s*'
 		AWSSecret		= '[A-F0-9]{16}:[a-zA-Z0-9+/]{48}'
 		DB				= '\bConnectionString\b'
-		ClientSecret	= '\bClientSecretb\'
+		ClientSecret	= '\bClientSecret\b'
 		SecureString = '\bSecureString|new\s+SecureString\s*\(\s*"[^"]*"\s*\)\b'
 	}
 	
